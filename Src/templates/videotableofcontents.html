@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+    <body>
+        <h1>Video Table of Contents</h1>
+        {% set length = result[1]|length %}
+        {% for i in range(length) %}
+            <p>{{result[1][i]}}: {{result[0][i]}}</p>
+        {% endfor %}
+    </body>
+</html>
